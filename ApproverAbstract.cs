@@ -2,7 +2,7 @@
 {
     public class ApproverAbstract : IApproverHandler
     {
-        private IApproverHandler _nextHandler;
+        private IApproverHandler? _nextHandler;
 
         public virtual object Handle(object request)
         {
