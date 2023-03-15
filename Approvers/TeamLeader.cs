@@ -1,8 +1,10 @@
-﻿namespace chain_of_responsibility_pattern.Approvers
+﻿using chain_of_responsibility_pattern.Models;
+
+namespace chain_of_responsibility_pattern.Approvers
 {
     public class TeamLeader : ApproverAbstract
     {
-        public override object Handle(object request)
+        public override HolidayRequest Handle(HolidayRequest request)
         {
             if (request is not null)
             {

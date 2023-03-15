@@ -1,10 +1,12 @@
-﻿namespace chain_of_responsibility_pattern
+﻿using chain_of_responsibility_pattern.Models;
+
+namespace chain_of_responsibility_pattern
 {
     public class ApproverAbstract : IApproverHandler
     {
         private IApproverHandler? _nextHandler;
 
-        public virtual object Handle(object request)
+        public virtual HolidayRequest Handle(HolidayRequest request)
         {
             if (_nextHandler is not null)
             {

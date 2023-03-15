@@ -1,8 +1,10 @@
-﻿namespace chain_of_responsibility_pattern
+﻿using chain_of_responsibility_pattern.Models;
+
+namespace chain_of_responsibility_pattern
 {
     public interface IApproverHandler
     {
-        object Handle(object request);
+        HolidayRequest Handle(HolidayRequest request);
         IApproverHandler SetNextApprover(IApproverHandler handler);
     }
 }
