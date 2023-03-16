@@ -4,6 +4,7 @@
     {
         public string EmployeeName { get; set; }
         public DateTime RequestDate { get; set; }
+        public int TotalHolidays { get; set; }
         public Status RequestStatus { get; set; }
         public DateTime LastUpdateDate { get; set; }
     }
