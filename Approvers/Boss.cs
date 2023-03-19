@@ -2,14 +2,14 @@
 
 namespace chain_of_responsibility_pattern.Approvers
 {
-    public class Director : ApproverAbstract
+    public class Boss : ApproverAbstract
     {
         public override HolidayRequest Handle(HolidayRequest request)
         {
-            if (request is not null && request.RequestStatus == Status.WaitingForDirectorApproval && request.TotalHolidays <= 20)
+            if (request is not null && request.RequestStatus == Status.WaitingForBossApproval && request.TotalHolidays <= 20)
             {
                 request.LastUpdateDate = DateTime.Now;
-                request.RequestStatus = Status.WaitingForBossApproval;
+                request.RequestStatus = Status.Approved;
 
                 return request;
             }

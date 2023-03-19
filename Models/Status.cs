@@ -4,6 +4,7 @@
     {
         WaitingForTeamLeaderApproval = 0,
         WaitingForDirectorApproval = 1,
-        WaitingForBossApproval = 2
+        WaitingForBossApproval = 2,
+        Approved = 3
     }
 }
