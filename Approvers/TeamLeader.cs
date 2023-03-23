@@ -13,6 +13,8 @@ namespace chain_of_responsibility_pattern.Approvers
                 request.EmployeeName = "Cihan Tekin";
                 request.RequestStatus = Status.WaitingForDirectorApproval;
 
+                Console.WriteLine($"{nameof(TeamLeader)} has approved your holiday request.");
+
                 return request;
             }
             else

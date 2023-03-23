@@ -11,6 +11,8 @@ namespace chain_of_responsibility_pattern.Approvers
                 request.LastUpdateDate = DateTime.Now;
                 request.RequestStatus = Status.Approved;
 
+                Console.WriteLine($"{nameof(Boss)} has approved your holiday request.");
+
                 return request;
             }
             else
