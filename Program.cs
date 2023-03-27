@@ -17,7 +17,7 @@ HolidayRequest holidayRequest = new()
 {
     EmployeeName = "Cihan Tekin",
     RequestDate = DateTime.Now, 
-    TotalHolidays = 10
+    TotalHolidays = 30
 };
 
 _ = teamLead.Handle(holidayRequest);

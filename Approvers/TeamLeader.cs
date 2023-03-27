@@ -19,6 +19,10 @@ namespace chain_of_responsibility_pattern.Approvers
             }
             else
             {
+                request.RequestStatus = Status.Rejected;
+                request.LastUpdater = nameof(TeamLeader);
+                Console.WriteLine($"{request.LastUpdater} has rejected your request!");
+
                 return base.Handle(request);
             }
 

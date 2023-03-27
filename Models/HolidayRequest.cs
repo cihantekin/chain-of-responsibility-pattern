@@ -7,5 +7,6 @@
         public int TotalHolidays { get; set; }
         public Status RequestStatus { get; set; }
         public DateTime LastUpdateDate { get; set; }
+        public string LastUpdater { get; set; }
     }
 }
